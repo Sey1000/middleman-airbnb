@@ -1,0 +1,35 @@
+.show-container {
+  padding: 20px 250px;
+  height: 50vh;
+  background-color: white;
+}
+
+.user-container {
+  display: flex;
+  justify-content: space-around;
+  .host-face {
+    text-align: center;
+    margin: 15px;
+    p {
+      opacity: 0.7;
+    }
+  }
+  .host-desc {
+    margin: 15px;
+    text-align: left;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      opacity: 0.7;
+    }
+  }
+}
+
+.form-booking {
+  width: 300px;
+  background: #E6E6E6;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
