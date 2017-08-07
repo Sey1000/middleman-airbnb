@@ -2,14 +2,12 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<%= partial "components/banner", locals: { header: "Welcome home" } %>
+
+
+<div class="cards-container">
+  <h3 id="cards-title">Recent flats</h3>
+  <div class="row">
+    <%= partial "components/card" %>
   </div>
 </div>

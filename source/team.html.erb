@@ -1,0 +1,15 @@
+<div class="buddy-wrapper">
+
+  <div class="buddy-container">
+  <h3>This template is built with <i class="fa fa-heart"></i> by</h3>
+    <ul class="list-inline text-center">
+      <% data.buddies.each do |bud| %>
+      <li class="buddy">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{bud.username}", class: "img-circle buddy-img" %>
+        <h5><%= bud.name %></h5>
+        <h6><i class="fa fa-github"></i> <%= bud.username.capitalize %></h6>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
